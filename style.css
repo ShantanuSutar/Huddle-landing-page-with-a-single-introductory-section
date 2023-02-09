@@ -1,0 +1,177 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.attribution a {
+  color: hsl(272, 68%, 19%);
+}
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--Violet);
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  max-width: 100%;
+}
+.absolute {
+  position: absolute;
+  max-width: 100%;
+  height: screen;
+  object-fit: cover;
+}
+.relative {
+  position: relative;
+  max-width: 100%;
+}
+.container {
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+
+.container .content .tagline {
+  font-family: "Poppins", sans-serif;
+}
+
+.illustration .relative #logo {
+  max-width: 7rem;
+  margin-bottom: 40px;
+}
+.illustration .relative #mockup {
+  padding: auto;
+  max-width: 95%;
+  padding: 0 10px;
+  margin-bottom: 50px;
+}
+.container .content {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.container .content .tagline {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 0 20px;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.container .content .about {
+  padding: 0 10px;
+  margin: none;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 100;
+  font-size: 15px;
+}
+.container .content .btn {
+  font-size: 13px;
+  padding: 10px 70px;
+  border-radius: 30px;
+  border: 1px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: var(--Violet);
+  font-family: "Poppins", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.container .content .btn:hover {
+  cursor: pointer;
+  background-color: var(--Soft-Magenta);
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.container .content .socials {
+  margin: 10px 0;
+}
+.container .content .socials .fa-facebook-f {
+  padding: 0 10px;
+}
+.container .content .socials .fa-twitter {
+  padding: 0 10px;
+}
+.container .content .socials .fa-instagram {
+  padding: 0 10px;
+}
+.container .content .socials .fa-facebook-f:hover {
+  color: var(--Soft-Magenta);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.container .content .socials .fa-twitter:hover {
+  color: var(--Soft-Magenta);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.container .content .socials .fa-instagram:hover {
+  color: var(--Soft-Magenta);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+@media (min-width: 768px) {
+  .container .illustration .bgimg {
+    background-image: url("images\bg-desktop.svg");
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+  }
+  .container .illustration {
+    flex: 1.4;
+  }
+
+  .illustration .relative #logo {
+    max-width: 13rem;
+    margin-bottom: 60px;
+  }
+  .container .content {
+    flex: 1;
+    padding: 0 50px;
+    text-align: left;
+  }
+  .container .content .tagline {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+  .container .content .about {
+    padding: 0;
+    margin: none;
+    text-align: left;
+    line-height: 1.6;
+    font-weight: 100;
+    font-size: 17px;
+  }
+  .container .content .btn {
+    font-size: 17px;
+    padding: 13px 70px;
+  }
+  .container .content .socials {
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+    font-size: 25px;
+  }
+}
